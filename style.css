@@ -1,0 +1,81 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(45deg,#E8807F,rgb(180, 156, 104),#E6C84F);
+    background-size: 300% 300%;
+    animation: gradiant-shift 12s ease-in-out infinite;
+}
+header{
+    text-align: center;
+    display:block;
+}
+
+header h2{
+    margin: 15px;
+    font-size: 4rem;
+    color:white;
+    font-family: "Anton SC", sans-serif,Arial ;
+}
+
+.buddha-img{
+    width:60vh;
+    filter: drop-shadow(1px 2px 1px black);
+}
+
+main{
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.contents h3{
+    font-family: "Anton SC", sans-serif,Arial ;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+.bullet-content li{
+    text-align: left;
+    font-family: "Assistant", sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+.bullet-content li::marker{
+    content: "➡";
+    font-size: 1.3em;
+}
+
+
+footer{
+    text-align: center;
+    font-size:15px;
+
+}
+
+footer a{
+    text-decoration: underline;
+    color: hsl(234, 78%, 7%)
+}
+
+@keyframes gradiant-shift {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }   
+    100%{
+        background-position: 0 50%;
+    }
+}
+
